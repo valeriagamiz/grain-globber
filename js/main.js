@@ -9,3 +9,9 @@ grains.forEach(function (grain) {
   $img.attr('src', 'images/' + grain.img);
   $desc.html(grain.desc);
   $name.html(grain.name);
+
+  $li.append($img);
+  $li.append($name);
+  $li.append($desc);
+  $ul.append($li);
+});
